@@ -11,7 +11,7 @@ Programming Language: Groovy
 
 📥 Download APK
 To test the application, download the latest version of the APK here:
-[Tap Here]([https://link-google-drive.com/apk-download](https://apkpure.com/nike-shoes-apparel-stories/com.nike.omega/download/25.15.0))
+[Tap Here]((https://apkpure.com/nike-shoes-apparel-stories/com.nike.omega/download/25.15.0))
 
 📖 How to Run the Tests
 Clone this repository:
