@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Functionality For Search, Favorite, Select Size and Checkout</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2571885d-83f3-4ea3-9dad-02596e0656a8</testCaseGuid>
+</TestCaseEntity>

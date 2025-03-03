@@ -1,0 +1,12 @@
+[38;5;66m[4abaaf98][0m[38;5;160m[Logcat][0m Logcat terminated with code 255, signal null
+[38;5;66m[4abaaf98][0m[38;5;202m[AppiumDriver@9681][0m Had trouble ending session 4abaaf98-3a31-4e62-8d29-063be3004698: Error executing adbExec. Original error: 'Command 'C:\\Users\\sulai\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device offline
+
+uncaughtException: Error executing adbExec. Original error: 'Command 'C:\\Users\\sulai\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device 'emulator-5554' not found
+
+Error: Error executing adbExec. Original error: 'Command 'C:\\Users\\sulai\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device 'emulator-5554' not found
+
+    at ChildProcess.<anonymous> (C:\Users\sulai\.appium\node_modules\appium-uiautomator2-driver\node_modules\teen_process\lib\exec.js:110:19)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)
+    at Process.callbackTrampoline (node:internal/async_hooks:130:17)
