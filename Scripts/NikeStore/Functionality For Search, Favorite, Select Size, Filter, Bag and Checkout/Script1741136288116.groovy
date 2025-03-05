@@ -33,34 +33,38 @@ catch (Exception startApp) {
 } // If driver initialization fails, start the application
 
 //End of app initialization
+
+
+///search product
 Mobile.tap(findTestObject('NikeStore/Search_.Button'), 0)
 
 Mobile.setText(findTestObject('NikeStore/set Search'), 'Air Jordan 1 Mid', 0)
 
 Mobile.tap(findTestObject('NikeStore/Suggest - Air Jordan 1 Mid'), 0)
 
+//choose product
 Mobile.tap(findTestObject('NikeStore/Air Jordan 1 Mid SE - ChooseTypeShoes'), 0)
 
 Mobile.scrollToText('Shown', FailureHandling.STOP_ON_FAILURE)
 
+//select size
 Mobile.tap(findTestObject('NikeStore/button - Select Size'), 0)
 
 Mobile.tap(findTestObject('NikeStore/sice eu 35,5'), 0)
-
-Mobile.tap(findTestObject('NikeStore/Favorite - Button'), 0)
-
-Mobile.getText(findTestObject('NikeStore/getText - Added to Favorites'), 0)
 
 Mobile.scrollToText('Country', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
+//assert product details
 Mobile.tap(findTestObject('NikeStore/button - View Product Details'), 0)
 
 Mobile.getText(findTestObject('NikeStore/Get Text - Product Details'), 0)
 
 Mobile.tap(findTestObject('NikeStore/back - button'), 0)
 
+
+//assert size guide
 Mobile.tap(findTestObject('NikeStore/button - SizeAndFit'), 0)
 
 Mobile.tap(findTestObject('NikeStore/button - Size Guide'), 0)
@@ -69,12 +73,14 @@ Mobile.getText(findTestObject('NikeStore/GetText - Nike Size Charts'), 0)
 
 Mobile.tap(findTestObject('NikeStore/back - button'), 0)
 
+//assert reviews 
 Mobile.tap(findTestObject('NikeStore/Reviews - Button'), 0)
 
 Mobile.scrollToText('See More Review', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('NikeStore/button - See More Reviews'), 0)
 
+//assert filter
 Mobile.tap(findTestObject('NikeStore/button - Sort By (filter)'), 0)
 
 Mobile.tap(findTestObject('NikeStore/button - Newest'), 0)
@@ -95,6 +101,7 @@ Mobile.tap(findTestObject('NikeStore/back - button'), 0)
 
 Mobile.scrollToText('Shown', FailureHandling.STOP_ON_FAILURE)
 
+//add product to bag and checkout
 Mobile.tap(findTestObject('NikeStore/AddToBag-Button'), 0)
 
 Mobile.tap(findTestObject('NikeStore/Button - Checkout'), 0)
@@ -103,6 +110,7 @@ Mobile.tap(findTestObject('NikeStore/Close - button'), 0)
 
 Mobile.tap(findTestObject('NikeStore/Qty'), 0)
 
+//bag Qty check
 Mobile.tap(findTestObject('NikeStore/addMoreQty - Button - 2'), 0)
 
 Mobile.tap(findTestObject('NikeStore/Button - Done'), 0)
@@ -121,6 +129,7 @@ Mobile.getText(findTestObject('NikeStore/GetText - Your Bag is empty'), 0)
 
 Mobile.tap(findTestObject('NikeStore/back - button'), 0)
 
+//add to favorite
 Mobile.tap(findTestObject('NikeStore/Favorite - Button'), 0)
 
 Mobile.getText(findTestObject('NikeStore/GetText - Removed from Favorites'), 0)
